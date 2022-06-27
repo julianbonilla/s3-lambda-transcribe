@@ -21,7 +21,7 @@ Follow the prompts in the deploy process to set the stack name, AWS Region and o
 ## Parameter Details
 
 * AudioBucketName: unique name of an S3 bucket for mp3 uploads (.mp3)
-* TranscribeBucketName: unique name of S3 buckt for transcription result (.json)
+* TranscribeBucketName: unique name of S3 bucket for transcription result (.json)
 * ConvertBucketName: unique name of S3 bucket for converted transcript (.txt, .pdf, .doc)
 * DefaultLanguageCode: The language code of your audio file (en-US)
 
