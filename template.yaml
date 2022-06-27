@@ -5,13 +5,13 @@ Description: s3-lambda-transcribe
 Parameters:
   AudioBucketName:
     Type: String
-    Default: 'audio-bucket-360092791669'
+    Default: 'audio-bucket-2a7ee00c-e8d9'
   TranscribeBucketName:
     Type: String
-    Default: 'transcribe-bucket-360092791669'
+    Default: 'transcribe-bucket-2a7ee00c-e8d9'
   ConvertBucketName:
     Type: String
-    Default: 'convert-bucket-360092791669'
+    Default: 'convert-bucket-2a7ee00c-e8d9'
   DefaultLanguageCode:
     Type: String
     Description: 'The language code of your audio file'
