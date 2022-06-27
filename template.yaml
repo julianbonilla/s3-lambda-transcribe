@@ -43,7 +43,7 @@ Resources:
     Properties:
       CodeUri: transcribeFunction/
       Handler: app.handler
-      Runtime: nodejs16.x
+      Runtime: nodejs14.x
       MemorySize: 128
       Environment:
         Variables:
@@ -78,7 +78,7 @@ Resources:
     Properties:
       CodeUri: convertFunction/
       Handler: app.handler
-      Runtime: nodejs16.x
+      Runtime: nodejs14.x
       MemorySize: 128
       Environment:
         Variables:
