@@ -5,7 +5,7 @@ This application automatically transcribes uploaded MP3 audio files, and extract
 ## Requirements
 
 * AWS CLI already configured with Administrator permission
-* [NodeJS 16.x installed](https://nodejs.org/en/download/)
+* [NodeJS 14.x installed](https://nodejs.org/en/download/)
 
 ## Installation Instructions
 
