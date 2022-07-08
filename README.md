@@ -1,6 +1,6 @@
 # Audio converter - transcription and document converter
 
-This application automatically transcribes uploaded MP3 audio files, and extracts the transcript to txt/pdf/doc files.
+This application automatically transcribes uploaded audio files, and extracts the transcript to txt files.
 
 ## Requirements
 
@@ -20,13 +20,13 @@ Follow the prompts in the deploy process to set the stack name, AWS Region and o
 
 ## Parameter Details
 
-* AudioBucketName: unique name of an S3 bucket for mp3 uploads (.mp3)
+* AudioBucketName: unique name of an S3 bucket for mp3 uploads (.mp3/.mp4/.wav/etc)
 * TranscribeBucketName: unique name of S3 bucket for transcription result (.json)
-* ConvertBucketName: unique name of S3 bucket for converted transcript (.txt, .pdf, .doc)
+* ConvertBucketName: unique name of S3 bucket for converted transcript (.txt)
 * DefaultLanguageCode: The language code of your audio file (en-US)
 
 ## How it works
 
-* Upload an MP3 file of a person speaking (ending in the suffix '.mp3') to the target S3 bucket.
+* Upload an MP3 file of a person speaking (ending in one of the valid the suffixes '.mp3', '.mp4', 'wav', etc) to the target S3 bucket.
 * After a few seconds you will see a transcription file in the TranscribeBucketName (using the same object name with .json appended).
-* This triggers a conversion from .json to .txt/pdf/doc and the result is stored in the ConvertBucketName.
+* This triggers a conversion from .json to .txt and the result is stored in the ConvertBucketName.
